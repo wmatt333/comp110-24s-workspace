@@ -1,53 +1,53 @@
 """EX01 - Simple Battleship - A cute step toward Battleship."""
 
 __author__ = "730544766"
-Boat_Location: str = input("Pick a secret boat location between 1 and 4: ")
-if int(Boat_Location) > 4:
-    print(f"Error! {Boat_Location} too high!")
+boat_location: str = input("Pick a secret boat location between 1 and 4: ")
+if int(boat_location) > 4:
+    print(f"Error! {boat_location} too high!")
     exit()
-if int(Boat_Location) < 1:
-    print(f"Error! {Boat_Location} too low!")
+if int(boat_location) < 1:
+    print(f"Error! {boat_location} too low!")
     exit()
-Boat_Guess: str = input("Guess a number between 1 and 4: ")
-if int(Boat_Guess) > 4:
-    print(f"Error! {Boat_Guess} too high!")
+boat_guess: str = input("Guess a number between 1 and 4: ")
+if int(boat_guess) > 4:
+    print(f"Error! {boat_guess} too high!")
     exit()
-if int(Boat_Guess) < 1:
-    print(f"Error! {Boat_Guess} too low!")
+if int(boat_guess) < 1:
+    print(f"Error! {boat_guess} too low!")
     exit()
-BLUE_BOX: str = "\U0001F7E6"
-RED_BOX: str = "\U0001F7E5"
-WHITE_BOX: str = "\U00002B1C"
-if int(Boat_Guess) == 1:
-    if Boat_Guess == Boat_Location:
-        Box1: str = RED_BOX
-    if Boat_Guess != Boat_Location:
-        Box1 = WHITE_BOX
+blue_box: str = "\U0001F7E6"
+red_box: str = "\U0001F7E5"
+white_box: str = "\U00002B1C"
+if int(boat_guess) == 1:
+    if boat_guess == boat_location:
+        box1: str = red_box
+    if boat_guess != boat_location:
+        box1 = white_box
 else:
-    Box1 = BLUE_BOX
-if int(Boat_Guess) == 2:
-    if Boat_Guess == Boat_Location:
-        Box2: str = RED_BOX
-    if Boat_Guess != Boat_Location:
-        Box2 = WHITE_BOX
+    box1 = blue_box
+if int(boat_guess) == 2:
+    if boat_guess == boat_location:
+        box2: str = red_box
+    if boat_guess != boat_location:
+        box2 = white_box
 else:
-    Box2 = BLUE_BOX
-if int(Boat_Guess) == 3:
-    if Boat_Guess == Boat_Location:
-        Box3: str = RED_BOX
-    if Boat_Guess != Boat_Location:
-        Box3 = WHITE_BOX
+    box2 = blue_box
+if int(boat_guess) == 3:
+    if boat_guess == boat_location:
+        box3: str = red_box
+    if boat_guess != boat_location:
+        box3 = white_box
 else:
-    Box3 = BLUE_BOX
-if int(Boat_Guess) == 4:
-    if Boat_Guess == Boat_Location:
-        Box4: str = RED_BOX
-    if Boat_Guess != Boat_Location:
-        Box4 = WHITE_BOX
+    box3 = blue_box
+if int(boat_guess) == 4:
+    if boat_guess == boat_location:
+        box4: str = red_box
+    if boat_guess != boat_location:
+        box4 = white_box
 else:
-    Box4 = BLUE_BOX
-print(f"{Box1}{Box2}{Box3}{Box4}")
-if int(Boat_Location == Boat_Guess):
+    box4 = blue_box
+print(f"{box1}{box2}{box3}{box4}")
+if int(boat_location == boat_guess):
     print("Correct! You hit the ship.")
 else:
     print("Incorrect! You missed the ship.")
