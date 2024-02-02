@@ -1,4 +1,4 @@
-"""EX02 - One Shot Battleship"""
+"""EX02 - One Shot Battleship."""
 
 __author__ = "730544766"
 
@@ -27,7 +27,7 @@ while row_counter <= grid_size:
     row_string: str = ""
     while column_counter <= grid_size:
         if int(row_guess) == row_counter and int(column_guess) == column_counter:
-            if(int(row_guess) == secret_row and int(column_guess) == secret_column):
+            if (int(row_guess) == secret_row and int(column_guess) == secret_column):
                 row_string += red_box
             else:
                 row_string += white_box
