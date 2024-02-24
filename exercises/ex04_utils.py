@@ -5,6 +5,9 @@ __author__ = "730544766"
 
 def all(numbers_list: list[int], check: int) -> bool:
     """Function 1."""
+    if len(numbers_list) == 0:
+        return False
+        quit()
     for numbers in numbers_list:
         if numbers != check:
             return False
@@ -16,7 +19,7 @@ def max(input: list[int]) -> int:
     """Function 2."""
     if len(input) == 0:
         raise ValueError("max() arg is an empty List")
-    high = 0
+    high = input[0]
     for numbers in input:
         if numbers > high:
             high = numbers
