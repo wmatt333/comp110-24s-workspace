@@ -46,7 +46,7 @@ def alphabetizer(list1: list[str]) -> dict[str, list[str]]:
     dict1: dict[str, list[str]] = {}
     for elem in list1:
         if elem[0].lower() in dict1:
-            dict1[elem[0]] += [elem]
+            dict1[elem[0].lower()] += [elem]
         else:
             dict1[elem[0].lower()] = [elem]
     return dict1
