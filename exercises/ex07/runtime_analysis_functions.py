@@ -36,3 +36,4 @@ def evaluate_memory_usage(fn_name, start_size: int, end_size: int):
         usage.append(result[1])
     print(f"Memory usage of {fn_name} for input of size {end_size}: {result[1]} blocks of memory.")
     return np.array(usage)
+
