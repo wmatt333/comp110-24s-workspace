@@ -13,9 +13,9 @@ def random_descending_list(n: int) -> list[int]:
     ind: int = 0
     while ind + 1 < n:
         num = random.randint(-100000, MAX_VAL)
-        if num < new_list[ind]:
-            new_list.append(num)
-            ind += 1
+        new_list.append(num)
+        ind += 1
+    new_list.sort(reverse=True)
     return new_list
 
 
