@@ -2,6 +2,7 @@ import numpy as np
 import timeit
 import tracemalloc
 import random
+from exercises.ex07.sort_functions import selection_sort
 
 MAX_VAL: int = 10 ** 5
 
@@ -15,7 +16,9 @@ def random_descending_list(n: int) -> list[int]:
         num = random.randint(-100000, MAX_VAL)
         new_list.append(num)
         ind += 1
-    new_list.sort(reverse=True)
+    selection_sort(new_list)
+    # or could use
+    # new_list.sort(reverse = True)
     return new_list
 
 

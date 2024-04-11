@@ -7,7 +7,7 @@ START_SIZE: int = 0
 END_SIZE: int = 1000
 
 
-usage = evaluate_memory_usage("insertion_sort", START_SIZE, END_SIZE)
-plt.plot(usage)
-plt.title("Memory Usage Analysis of Insertion Sort - 730544766")
+times = evaluate_runtime("selection_sort", START_SIZE, END_SIZE)
+plt.plot(times)
+plt.title("Runtime Analysis of Selection Sort - 730544766")
 plt.show()
