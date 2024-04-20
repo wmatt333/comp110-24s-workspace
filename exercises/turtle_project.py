@@ -1,10 +1,8 @@
 """Builds a picture of space including the sun, stars, and planets.
-
 For part 7 I broke my draw_planet function into a planet_color function
 and broke my draw_sunrays function into a find_radius function.
 For part 8 I used the circle function for most of my shapes and
-also used the bgcolor function to change the color of my background.
-"""
+also used the bgcolor function to change the color of my background."""
 
 
 __author__ = "730544766"
